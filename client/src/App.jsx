@@ -20,7 +20,7 @@ const myRrecipes = async () => {
   let user = JSON.parse(localStorage.getItem("user"))
   let AllRrecipes = await getAllRrecipe()
   return AllRrecipes.filter(item => item.createBy === user._id)
-}
+} 
 const favRecipes = async () => {
   return JSON.parse(localStorage.getItem('fav'))
 }
