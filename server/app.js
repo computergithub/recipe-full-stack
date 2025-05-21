@@ -8,9 +8,9 @@ const dotenv=require('dotenv').config()
 // const dotenv=require("dotenv").config() INSTOLL  DOTENV FOR LISTENING PROT
 const PORT =  process.env.PORT
 // const LAST=process.env.LAST
-mongooDb()
+mongooDb()  
 
-App.use(express.json())
+App.use(express.json()) 
 App.use(cors()) 
 App.use(express.static('public'))
 
