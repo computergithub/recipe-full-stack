@@ -11,7 +11,7 @@ const PORT =  process.env.PORT
 mongooDb()  
 
 App.use(express.json()) 
-App.use(cors()) 
+App.use(cors({origin:process.env.frontURL,credentials:true}))
 App.use(express.static('public'))
 
 // App.get("/loging", (req, res) => {
