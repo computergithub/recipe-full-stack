@@ -6,7 +6,7 @@ import Profile from '../component/profile'
 import Registration from '../component/Registration'
 import './App.css'     
      
-const localhostLink='https://recipe-full-backend.onrender.com'
+const localhostLink='https://recipe-sable-nine.vercel.app'
 const getAllRrecipe = async () => {
   let getAllRrecipe = [] 
   await axios.get(`${localhostLink+'/recipe/recipes'}`).then(res => {
